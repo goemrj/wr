@@ -1,0 +1,32 @@
+/* 핸드폰용 읽기 사본에만 얹는 껍데기.
+   앱 소스는 건드리지 않는다 — tools/phone-export.ps1 이 이 파일을
+   복사본 index.html 에만 끼워 넣는다.
+
+   이 사본은 깃허브에 올라가 있어서 서버에 쓸 수 없다. 그래서 쓰기
+   단추를 감춘다. main.js 의 paintChrome() 이 style.display 를 직접
+   건드리므로 !important 가 필요하다. */
+
+#btn-draft,
+#btn-submit,
+#saved,
+.linkbtn[data-view="settings"],
+.actions,
+.f-del,
+.f-drag {
+  display: none !important;
+}
+
+/* 읽기 전용이라는 사실과 언제 만든 사본인지 */
+.ro-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  padding: 7px 20px;
+  background: var(--bit-amber-50);
+  color: #8a6400;
+  font-size: 12.5px;
+  border-bottom: 1px solid #f0dfae;
+}
+.ro-note strong { font-weight: 700; }
+.ro-note span { color: #9c7a2a; }

@@ -1,0 +1,150 @@
+{
+  "schema": 2,
+  "id": "2026-09-2",
+  "author": "김다혜",
+  "year": 2026,
+  "month": 9,
+  "week": 2,
+  "label": "9월 2주",
+  "weekStart": "2026-09-07",
+  "weekEnd": "2026-09-13",
+  "writtenOn": "2026-09-11",
+  "counts": {
+    "inquiry": [
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    "remote": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "phone": [
+      4,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "dayMarks": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "submittedAt": null,
+  "updatedAt": "2026-09-08T06:38:40.028Z",
+  "rules": [
+    {
+      "uid": "imtsarisv1x",
+      "title": "건강보험 보장 수준 높아진다 중증·희귀난치 환자 197만 명에 연 8천억 원 지원",
+      "detail": "희귀/중증난치 10>7% ('26.12.)>5% ('28.1.)\n당뇨병 의료비 지원 대상 확대 (기존의 1형 뿐만 아니라 중증 2형 당뇨병(췌도부전 이상)\n1) 인슐린자동주입기\n > 1, 2종 관계 없이\n  - 췌장장애 : 10% 본인부담\n  - 췌도부전 : 소아10%, 성인 30%\n  - 청년 인슐린 자동주입기 나이를 34세까지 확대 (10%, 19~34세는 췌장장애10%, 췌도부전30%)\n2) 연속혈당측정기\n > 1, 2종 관계 없이 (임신 중 당뇨까지 포함)\n - 췌장장애 : 10%\n - 췌도부전 : 20%\n재택관리 시범사업 지원 대상 > 중증 2형 당뇨병 환자까지 확대\n당원병 환자 연속혈당측정용 전극 지원 (E74.0으로 산특 등록한 사람)\n - 당뇨소모성재료 : 10%\n - 연속혈당측정용 전극 : 19세 미만 10%, 19세 이상 20%\n소아 치과지원 '광중합형 복합레진' 대상 12세 이하 > 13세 이하로 연령 확대",
+      "startDate": "2026-09-08",
+      "dueDate": "2026-09-08",
+      "progress": 100,
+      "done": true,
+      "note": "보건복지부 보도자료\n",
+      "repeat": false,
+      "tpl": "",
+      "meeting": false,
+      "notice": false,
+      "carried": false,
+      "auto": false
+    }
+  ],
+  "support": [],
+  "dev": [
+    {
+      "uid": "imtqn8wy315",
+      "title": "카스퍼스키 오류 미발생 시키는 방법 (이준희책임님도움)\n1. url 왼쪽 아이콘 클릭\n2. 이 연결은 안전합니다 > 인증서가 유효함 > 세부정보 > 내보내기\n3. 다운로드 후 실행하여 인증서 설치 > 현재사용자 > 다음 > 다음 > 마침",
+      "detail": "",
+      "startDate": "2026-09-07",
+      "dueDate": "2026-09-07",
+      "progress": 100,
+      "done": true,
+      "note": "",
+      "repeat": false,
+      "tpl": "",
+      "meeting": false,
+      "notice": false,
+      "carried": false,
+      "auto": false
+    }
+  ],
+  "test": [],
+  "account": [],
+  "plan": [
+    {
+      "uid": "imtqn8qvf10",
+      "title": "2026년 9월 3주 고시 분석 및 내용 정리",
+      "detail": "",
+      "startDate": "",
+      "dueDate": "",
+      "progress": 0,
+      "done": false,
+      "note": "",
+      "repeat": true,
+      "tpl": "{{차주}} 고시 분석 및 내용 정리",
+      "meeting": false,
+      "notice": false,
+      "carried": false,
+      "auto": true
+    },
+    {
+      "uid": "imtqn8qvf11",
+      "title": "질의 답변 건 리뷰 및 복습",
+      "detail": "",
+      "startDate": "",
+      "dueDate": "",
+      "progress": 0,
+      "done": false,
+      "note": "",
+      "repeat": true,
+      "tpl": "",
+      "meeting": false,
+      "notice": false,
+      "carried": false,
+      "auto": true
+    },
+    {
+      "uid": "imtqn8qvf12",
+      "title": "멍키스 신설사항 확인하고 숙지",
+      "detail": "",
+      "startDate": "",
+      "dueDate": "",
+      "progress": 0,
+      "done": false,
+      "note": "",
+      "repeat": true,
+      "tpl": "",
+      "meeting": false,
+      "notice": false,
+      "carried": false,
+      "auto": true
+    },
+    {
+      "uid": "imtqn8qvf13",
+      "title": "스킵건 분석하여 수정요청 및 컨펌",
+      "detail": "",
+      "startDate": "",
+      "dueDate": "",
+      "progress": 0,
+      "done": false,
+      "note": "",
+      "repeat": true,
+      "tpl": "",
+      "meeting": false,
+      "notice": false,
+      "carried": false,
+      "auto": true
+    }
+  ],
+  "shared": []
+}

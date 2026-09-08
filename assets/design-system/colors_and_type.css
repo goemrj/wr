@@ -1,0 +1,251 @@
+/* ============================================================
+   Bit Computer Design System — Colors & Type
+   Brand: 비트컴퓨터 (BITcomputer)
+   Tagline: 시간과 공간을 초월한 평생 의료 서비스
+   ============================================================ */
+
+/* Remote font stylesheets MUST precede other rules (@import ordering).
+   Pretendard (static + variable) + JetBrains Mono are served from CDN. */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+
+:root {
+  /* =========================================================
+     PRIMARY BLUE SCALE — sampled from official BIT CI #004191
+     ========================================================= */
+  --bit-blue-50:  #EEF4FC;
+  --bit-blue-100: #D6E4F5;
+  --bit-blue-200: #B1C8E8;
+  --bit-blue-300: #7DA4D6;
+  --bit-blue-400: #3F74BB;
+  --bit-blue-500: #1F5FB4;   /* Primary for product UI */
+  --bit-blue-600: #004191;   /* Corporate primary (CI master) */
+  --bit-blue-700: #003879;
+  --bit-blue-800: #002F6C;
+  --bit-blue-900: #001F48;   /* Sidebar, deep bands */
+
+  /* Cyan — accent for digital-healthcare / telemedicine surfaces */
+  --bit-cyan-50:  #E6F6FB;
+  --bit-cyan-100: #C3E9F3;
+  --bit-cyan-500: #00A9D4;
+  --bit-cyan-600: #0088AE;
+  --bit-cyan-700: #005A78;
+
+  /* =========================================================
+     INK / NEUTRAL SCALE — cool grey, slight blue cast
+     ========================================================= */
+  --bit-ink-50:  #F6F8FB;
+  --bit-ink-100: #EDF1F6;
+  --bit-ink-200: #E3E7EE;
+  --bit-ink-300: #C9CFD9;
+  --bit-ink-400: #B5BCC8;
+  --bit-ink-500: #7A8497;
+  --bit-ink-600: #4A5567;
+  --bit-ink-700: #1F2A3D;
+  --bit-ink-800: #0E1A2C;
+  --bit-ink-900: #050B17;
+
+  /* =========================================================
+     SEMANTIC COLOR SCALES
+     ========================================================= */
+  --bit-green-50:  #E6F5EC;
+  --bit-green-500: #1E9E63;
+  --bit-green-600: #156D44;
+
+  --bit-amber-50:  #FDF3DC;
+  --bit-amber-500: #E0A100;
+  --bit-amber-600: #B07D00;
+
+  --bit-red-50:  #FCE8E7;
+  --bit-red-500: #D2362E;
+  --bit-red-600: #A02621;
+
+  /* =========================================================
+     SEMANTIC ALIASES (--color-*)
+     ========================================================= */
+  --color-bg:        #FFFFFF;
+  --color-bg-alt:    var(--bit-ink-50);
+  --color-bg-mute:   var(--bit-ink-100);
+  --color-surface:   #FFFFFF;
+
+  --color-fg-1:      var(--bit-ink-800);  /* headlines */
+  --color-fg-2:      var(--bit-ink-700);  /* body */
+  --color-fg-3:      var(--bit-ink-500);  /* secondary / captions */
+  --color-fg-4:      var(--bit-ink-400);  /* disabled / placeholder */
+
+  --color-border:    var(--bit-ink-200);
+  --color-border-strong: var(--bit-ink-300);
+
+  --color-primary:      var(--bit-blue-600);
+  --color-primary-hover: var(--bit-blue-800);
+
+  --color-success: var(--bit-green-500);
+  --color-warning: var(--bit-amber-500);
+  --color-danger:  var(--bit-red-500);
+
+  /* =========================================================
+     LEGACY ALIASES — older components still reference these
+     ========================================================= */
+  --bit-navy:        var(--bit-blue-600);
+  --bit-navy-deep:   var(--bit-blue-800);
+  --bit-navy-tint:   #2E62B3;
+  --bit-sky:         var(--bit-blue-50);
+  --bit-sky-2:       var(--bit-blue-100);
+  --bit-ink:         var(--bit-ink-800);
+  --bit-fg-1:        var(--bit-ink-700);
+  --bit-fg-2:        var(--bit-ink-600);
+  --bit-fg-3:        var(--bit-ink-500);
+  --bit-fg-4:        var(--bit-ink-400);
+  --bit-line:        var(--bit-ink-200);
+  --bit-line-strong: var(--bit-ink-300);
+  --bit-bg:          #FFFFFF;
+  --bit-bg-alt:      var(--bit-ink-50);
+  --bit-bg-mute:     var(--bit-ink-100);
+  --bit-success:     var(--bit-green-500);
+  --bit-warning:     var(--bit-amber-500);
+  --bit-danger:      var(--bit-red-500);
+  --bit-info:        #2E62B3;
+  --fg-1: var(--color-fg-1);
+  --fg-2: var(--color-fg-2);
+  --fg-3: var(--color-fg-3);
+  --fg-4: var(--color-fg-4);
+  --bg:   var(--color-bg);
+  --bg-alt: var(--color-bg-alt);
+  --primary: var(--color-primary);
+  --primary-hover: var(--color-primary-hover);
+  --line: var(--color-border);
+
+  /* =========================================================
+     TYPE FAMILIES
+     ========================================================= */
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont,
+               "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  --font-sans-kr: var(--font-sans);           /* Korean-first alias */
+  --font-display: var(--font-sans);
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, "Cascadia Code", Menlo, monospace;
+  --font-numeric: var(--font-sans);           /* Pretendard has excellent tabular nums */
+
+  /* =========================================================
+     TYPE SCALE
+     ========================================================= */
+  --fs-display:  56px;
+  --fs-h1:       40px;
+  --fs-h2:       32px;
+  --fs-h3:       24px;
+  --fs-h4:       20px;
+  --fs-body-lg:  18px;
+  --fs-body:     16px;
+  --fs-body-sm:  14px;
+  --fs-caption:  13px;
+  --fs-micro:    12px;
+
+  --lh-tight:  1.2;   /* @kind font */
+  --lh-snug:   1.35;  /* @kind font */
+  --lh-normal: 1.55;  /* @kind font */
+  --lh-loose:  1.7;   /* @kind font */
+
+  --ls-tight:  -0.02em; /* @kind font */
+  --ls-snug:   -0.01em; /* @kind font */
+  --ls-normal: 0;       /* @kind font */
+  --ls-wide:   0.04em;  /* @kind font */
+
+  /* =========================================================
+     SPACING — 4px base
+     ========================================================= */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+  --sp-24: 96px;
+  --sp-32: 128px;
+
+  /* =========================================================
+     RADIUS — institutional, low radii
+     ========================================================= */
+  --r-0: 0;   /* @kind radius */
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 6px;
+  --r-4: 8px;
+  --r-5: 12px;
+  --r-pill: 999px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  /* =========================================================
+     SHADOWS — cool-cast, restrained
+     ========================================================= */
+  --shadow-1: 0 1px 2px rgba(14, 26, 44, 0.06);
+  --shadow-2: 0 2px 8px rgba(14, 26, 44, 0.08);
+  --shadow-3: 0 8px 24px rgba(14, 26, 44, 0.10);
+  --shadow-4: 0 16px 48px rgba(14, 26, 44, 0.14);
+  --shadow-focus: 0 0 0 3px rgba(0, 65, 145, 0.20);
+  /* aliases used by product UI kit */
+  --shadow-sm: var(--shadow-1);
+  --shadow-md: var(--shadow-2);
+  --shadow-lg: var(--shadow-3);
+  --shadow-xl: var(--shadow-4);
+
+  /* =========================================================
+     LAYOUT / MOTION
+     ========================================================= */
+  --container-max: 1200px; /* @kind spacing */
+  --container-pad: 24px;   /* @kind spacing */
+
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);   /* @kind other */
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);  /* @kind other */
+  --dur-fast:   140ms;  /* @kind other */
+  --dur-normal: 240ms;  /* @kind other */
+  --dur-slow:   420ms;  /* @kind other */
+}
+
+/* ============================================================
+   TYPOGRAPHY DEFAULTS
+   ============================================================ */
+html { font-family: var(--font-sans); color: var(--color-fg-1); background: var(--color-bg); }
+body { font-size: var(--fs-body); line-height: var(--lh-normal); -webkit-font-smoothing: antialiased; }
+
+.h-display, .display {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  font-weight: 700;
+  color: var(--color-fg-1);
+}
+h1, .h1 { font-size: var(--fs-h1); line-height: var(--lh-tight); letter-spacing: var(--ls-tight); font-weight: 700; color: var(--color-fg-1); }
+h2, .h2 { font-size: var(--fs-h2); line-height: var(--lh-snug);  letter-spacing: var(--ls-snug);  font-weight: 700; color: var(--color-fg-1); }
+h3, .h3 { font-size: var(--fs-h3); line-height: var(--lh-snug);  letter-spacing: var(--ls-snug);  font-weight: 600; color: var(--color-fg-1); }
+h4, .h4 { font-size: var(--fs-h4); line-height: var(--lh-snug);  font-weight: 600; color: var(--color-fg-1); }
+p, .body   { font-size: var(--fs-body);    line-height: var(--lh-normal); color: var(--color-fg-2); }
+.body-lg   { font-size: var(--fs-body-lg); line-height: var(--lh-normal); color: var(--color-fg-2); }
+.body-sm   { font-size: var(--fs-body-sm); line-height: var(--lh-normal); color: var(--color-fg-2); }
+.caption   { font-size: var(--fs-caption); color: var(--color-fg-3); line-height: var(--lh-snug); }
+.micro     { font-size: var(--fs-micro);   color: var(--color-fg-3); line-height: var(--lh-snug); }
+
+.eyebrow {
+  font-size: var(--fs-micro);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--bit-blue-600);
+}
+
+code, kbd, samp, .mono { font-family: var(--font-mono); font-size: 0.92em; }
+
+a { color: var(--bit-blue-600); text-decoration: none; }
+a:hover { color: var(--bit-blue-800); text-decoration: underline; text-underline-offset: 3px; }
+
+hr { border: 0; border-top: 1px solid var(--color-border); margin: var(--sp-8) 0; }
+
+::selection { background: var(--bit-blue-600); color: #fff; }
